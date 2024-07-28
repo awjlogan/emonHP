@@ -604,7 +604,7 @@
     (property "Reference" "R10" (at 149.86 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Value" "47K" (at 149.86 77.47 0)
+    (property "Value" "100K" (at 149.86 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 152.908 76.2 90)
