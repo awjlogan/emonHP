@@ -2,13 +2,15 @@
 
   (uuid e9f29fe7-ec70-429c-ac75-35c2b0483f2b)
 
-  (paper "A4")
+  (paper "A3")
 
   (title_block
     (title "emonHP")
-    (date "2024-07-02")
-    (rev "0")
+    (date "2024-08-11")
+    (rev "0.1-dev")
     (company "Tilt Ltd / OpenEnergyMonitor")
+    (comment 1 "Creative Commons Attribution-ShareAlike 4.0 License")
+    (comment 2 "Commit: gitrev")
   )
 
   (lib_symbols

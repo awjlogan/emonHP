@@ -2,13 +2,15 @@
 
   (uuid 36d146b0-f348-4341-a935-471af0e684a6)
 
-  (paper "A4")
+  (paper "A3")
 
   (title_block
     (title "emonHP")
-    (date "2024-07-02")
-    (rev "0")
+    (date "2024-08-11")
+    (rev "0.1-dev")
     (company "Tilt Ltd / OpenEnergyMonitor")
+    (comment 1 "Creative Commons Attribution-ShareAlike 4.0 License")
+    (comment 2 "Commit: gitrev")
   )
 
   (lib_symbols
@@ -1683,36 +1685,6 @@
       (project "emonHP"
         (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/47d3f211-4a48-4ab2-adbe-56046b34137e"
           (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 270.51 160.02 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 915b0c94-7ebf-4345-a28a-839de66d54a1)
-    (property "Reference" "#PWR022" (at 270.51 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 270.51 165.1 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 270.51 160.02 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 270.51 160.02 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 54eaba3d-51f5-499b-b03a-6a3f85afb285))
-    (instances
-      (project "mbus-reader-proto"
-        (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/47d3f211-4a48-4ab2-adbe-56046b34137e"
-          (reference "#PWR040") (unit 1)
         )
       )
     )

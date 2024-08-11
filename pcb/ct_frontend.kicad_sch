@@ -2,15 +2,15 @@
 
   (uuid 324f0fbd-ce43-4137-a3d5-2e162ecba8f0)
 
-  (paper "A4")
+  (paper "A3")
 
   (title_block
     (title "emonHP")
-    (date "2024-07-02")
-    (rev "0")
+    (date "2024-08-11")
+    (rev "0.1-dev")
     (company "Tilt Ltd / OpenEnergyMonitor")
-    (comment 1 "Original design: Trystan Lea & Glynn Hudson")
-    (comment 2 "Commit hash: gitrev")
+    (comment 1 "Creative Commons Attribution-ShareAlike 4.0 License")
+    (comment 2 "Commit: gitrev")
   )
 
   (lib_symbols
