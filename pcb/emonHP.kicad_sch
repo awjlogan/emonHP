@@ -4588,7 +4588,7 @@
     (property "Value" "SW_Push" (at 325.12 175.895 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" (at 318.77 173.99 0)
+    (property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS" (at 318.77 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 318.77 173.99 0)
