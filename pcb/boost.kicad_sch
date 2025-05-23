@@ -377,9 +377,6 @@
   (junction (at 114.3 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 572a6854-dd8f-4a83-9f5a-e3779c28a70e)
   )
-  (junction (at 95.25 156.21) (diameter 0) (color 0 0 0 0)
-    (uuid 6fab9974-bce1-4cdd-9ad9-fab890ea48c9)
-  )
   (junction (at 134.62 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 8a25c9eb-a51b-404e-8234-86c0716a8498)
   )
@@ -483,10 +480,6 @@
     (stroke (width 0) (type default))
     (uuid 91f7e9a0-4e6a-4759-9b20-5ccb4e102a14)
   )
-  (wire (pts (xy 95.25 156.21) (xy 105.41 156.21))
-    (stroke (width 0) (type default))
-    (uuid 9d5d0de1-7894-4540-897b-641329621e09)
-  )
   (wire (pts (xy 96.52 82.55) (xy 114.3 82.55))
     (stroke (width 0) (type default))
     (uuid 9ef9ebad-f12a-4d63-acbf-c91c5e74d728)
@@ -499,10 +492,6 @@
     (stroke (width 0) (type default))
     (uuid a8abb77a-dc27-44dc-869c-41497e0b7532)
   )
-  (wire (pts (xy 95.25 156.21) (xy 95.25 158.75))
-    (stroke (width 0) (type default))
-    (uuid ad0d991a-cfc3-4fe4-b054-9c5af286a340)
-  )
   (wire (pts (xy 132.08 82.55) (xy 134.62 82.55))
     (stroke (width 0) (type default))
     (uuid b003bbd3-7687-4b47-a49e-d9bf47ded0bd)
@@ -511,17 +500,9 @@
     (stroke (width 0) (type default))
     (uuid b3a46fa3-86b5-4611-8843-f5de7d0584be)
   )
-  (wire (pts (xy 95.25 166.37) (xy 95.25 168.91))
-    (stroke (width 0) (type default))
-    (uuid bad1eedd-21af-4574-aba6-11e475a873dc)
-  )
   (wire (pts (xy 147.32 92.71) (xy 147.32 95.25))
     (stroke (width 0) (type default))
     (uuid bb4913f3-528c-4167-a210-322440189f60)
-  )
-  (wire (pts (xy 92.71 156.21) (xy 95.25 156.21))
-    (stroke (width 0) (type default))
-    (uuid c02dc3c0-ccc9-4b81-9541-dba238e15414)
   )
   (wire (pts (xy 158.75 85.09) (xy 158.75 82.55))
     (stroke (width 0) (type default))
@@ -542,10 +523,6 @@
   (wire (pts (xy 158.75 92.71) (xy 158.75 95.25))
     (stroke (width 0) (type default))
     (uuid dd7ed283-57b7-42d0-8d0e-16de938e908b)
-  )
-  (wire (pts (xy 74.93 156.21) (xy 85.09 156.21))
-    (stroke (width 0) (type default))
-    (uuid deaf9590-84b2-4029-affd-89b900a47869)
   )
   (wire (pts (xy 114.3 82.55) (xy 114.3 69.85))
     (stroke (width 0) (type default))
@@ -568,10 +545,6 @@
     (uuid ff09f17d-5f33-4572-848c-77c53b99d7a7)
   )
 
-  (label "36V" (at 74.93 156.21 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 59be9787-64bb-4924-bf52-c80a054591b7)
-  )
   (label "BOOST_SW" (at 134.62 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ecbd72f0-73cc-46b1-9abf-eec906ce77cd)
@@ -581,11 +554,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 81a74697-2cee-4ea0-bc09-0cabe3558964)
   )
-  (hierarchical_label "36V_RG" (shape passive) (at 105.41 156.21 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dea7efe2-0084-4f20-85bc-3bf8a0b99f8b)
-  )
-  (hierarchical_label "EN" (shape output) (at 114.3 93.98 0) (fields_autoplaced)
+  (hierarchical_label "EN" (shape input) (at 114.3 93.98 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f3bba65b-9067-45b4-908f-2a8a5939c14a)
   )
@@ -593,7 +562,7 @@
   (symbol (lib_id "Device:R") (at 147.32 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1559bfe1-31ce-4b76-9260-bf95f589b9d3)
-    (property "Reference" "R3" (at 149.86 103.505 0)
+    (property "Reference" "R?" (at 149.86 103.505 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "13K3" (at 149.86 106.045 0)
@@ -610,49 +579,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "R3") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "R3") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "R14") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 88.9 156.21 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3807aad1-9c55-4e51-9475-025e9d684fa6)
-    (property "Reference" "R3" (at 88.9 151.13 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "180K" (at 88.9 153.67 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 88.9 157.988 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 88.9 156.21 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2c632da9-9aa5-4b0c-90d4-5667e85f97d1))
-    (pin "2" (uuid 81b30cd5-8f12-40dd-adb7-fbf18b370866))
-    (instances
-      (project "mbus-reader-proto"
-        (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "R3") (unit 1)
-        )
-        (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "R3") (unit 1)
-        )
-      )
-      (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "R34") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -661,7 +596,7 @@
   (symbol (lib_id "Device:C") (at 158.75 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38677bc3-af6c-49ff-a267-df54a3b09710)
-    (property "Reference" "C2" (at 162.56 88.265 0)
+    (property "Reference" "C?" (at 162.56 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "82p" (at 162.56 90.805 0)
@@ -678,15 +613,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "C11") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -695,7 +630,7 @@
   (symbol (lib_id "Device:R") (at 106.68 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39d50e9d-e9e0-4155-9de2-4e7e4f7e6a56)
-    (property "Reference" "R1" (at 109.22 99.695 0)
+    (property "Reference" "R?" (at 109.22 99.695 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47K" (at 109.22 102.235 0)
@@ -712,15 +647,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "R12") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -729,7 +664,7 @@
   (symbol (lib_id "power:GND") (at 124.46 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3cab46a3-0267-47c2-9e00-914aa1a0bea7)
-    (property "Reference" "#PWR02" (at 124.46 101.6 0)
+    (property "Reference" "#PWR?" (at 124.46 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 100.33 0)
@@ -745,15 +680,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR026") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -762,7 +697,7 @@
   (symbol (lib_id "Device:L") (at 124.46 69.85 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d2bd08f-baec-4269-b779-adec7e6c6593)
-    (property "Reference" "L1" (at 124.46 66.04 90)
+    (property "Reference" "L?" (at 124.46 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10u" (at 124.46 68.58 90)
@@ -771,7 +706,13 @@
     (property "Footprint" "Inductor_SMD:L_Abracon_ASPI-3012S" (at 124.46 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 124.46 69.85 0)
+    (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/3/ASPI_3012S-1775077.pdf" (at 124.46 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "ASPI-3012S-100M-T" (at 124.46 69.85 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "815-ASPI-3012S-100MT" (at 124.46 69.85 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e7c92eff-d4c3-4ee9-9c2e-e7bb41e05156))
@@ -779,14 +720,14 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "L1") (unit 1)
+          (reference "L?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "L1") (unit 1)
+          (reference "L?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
           (reference "L1") (unit 1)
         )
       )
@@ -796,7 +737,7 @@
   (symbol (lib_id "Device:C") (at 185.42 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53083e3a-ac97-40d0-b6d9-37e444deb6f4)
-    (property "Reference" "C5" (at 189.23 88.265 0)
+    (property "Reference" "C?" (at 189.23 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7" (at 189.23 90.805 0)
@@ -822,15 +763,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "C14") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -839,7 +780,7 @@
   (symbol (lib_id "power:GND") (at 147.32 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 55dd2ea2-329f-4049-b254-c86937632837)
-    (property "Reference" "#PWR04" (at 147.32 116.84 0)
+    (property "Reference" "#PWR?" (at 147.32 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 115.57 0)
@@ -855,49 +796,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR027") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 95.25 162.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5e39c4b3-2967-450a-acbc-fbf259b92810)
-    (property "Reference" "R3" (at 97.79 161.925 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "13K3" (at 97.79 164.465 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 93.472 162.56 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 95.25 162.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a45b0e1e-95c4-47b5-ac85-d26286dbd4b8))
-    (pin "2" (uuid 0eee87fb-d1ff-4d94-9233-eb4b5ea9358d))
-    (instances
-      (project "mbus-reader-proto"
-        (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "R3") (unit 1)
-        )
-        (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "R3") (unit 1)
-        )
-      )
-      (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "R25") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -906,7 +813,7 @@
   (symbol (lib_id "Regulator_Switching:LM2733XMF") (at 124.46 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7303578a-067b-447e-8fe2-50e4e66bb228)
-    (property "Reference" "U1" (at 124.46 76.2 0)
+    (property "Reference" "U?" (at 124.46 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM2733XMF" (at 124.46 78.74 0)
@@ -918,6 +825,12 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2733.pdf" (at 124.46 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MPN" "LM2733XMFX/NOPB" (at 124.46 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "926-LM2733XMFX/NOPB" (at 124.46 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid bf9241e7-dabe-412c-b736-dc6765bbacdc))
     (pin "2" (uuid c316fe93-1d7c-4810-be79-8225ede95456))
     (pin "3" (uuid 87beeefa-6a71-4a50-a98f-88dbfd86aa0f))
@@ -926,14 +839,14 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
           (reference "U5") (unit 1)
         )
       )
@@ -943,7 +856,7 @@
   (symbol (lib_id "power:GND") (at 185.42 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76e2f940-a5c7-4d1f-aa44-b1fa6c317ffd)
-    (property "Reference" "#PWR015" (at 185.42 101.6 0)
+    (property "Reference" "#PWR?" (at 185.42 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 100.33 0)
@@ -959,15 +872,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR063") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -976,7 +889,7 @@
   (symbol (lib_id "Device:C") (at 171.45 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e93fa4a-95a6-4329-af94-d34333f45f35)
-    (property "Reference" "C5" (at 175.26 88.265 0)
+    (property "Reference" "C?" (at 175.26 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7" (at 175.26 90.805 0)
@@ -1002,15 +915,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "C5") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "C12") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -1019,7 +932,7 @@
   (symbol (lib_id "power:GND") (at 171.45 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a78683a4-2069-4997-8334-e41c2faf8618)
-    (property "Reference" "#PWR015" (at 171.45 101.6 0)
+    (property "Reference" "#PWR?" (at 171.45 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 171.45 100.33 0)
@@ -1035,15 +948,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR028") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -1052,7 +965,7 @@
   (symbol (lib_id "Diode:MBR0550") (at 140.97 82.55 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid be2de1d4-e369-4d92-a371-16c66f34aad4)
-    (property "Reference" "D1" (at 141.2875 77.47 0)
+    (property "Reference" "D?" (at 141.2875 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MBR0550" (at 141.2875 80.01 0)
@@ -1069,48 +982,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "D6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 95.25 168.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c5689775-d0b2-4f13-8892-054b3f2b69e1)
-    (property "Reference" "#PWR02" (at 95.25 175.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 95.25 173.99 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 95.25 168.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 95.25 168.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c21128a5-6d36-4c87-bff9-7d9af4e02696))
-    (instances
-      (project "mbus-reader-proto"
-        (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR02") (unit 1)
-        )
-        (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR062") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -1119,7 +999,7 @@
   (symbol (lib_id "power:GND") (at 106.68 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d5eac296-29e0-45b1-9561-e534f7faa5c9)
-    (property "Reference" "#PWR02" (at 106.68 113.03 0)
+    (property "Reference" "#PWR?" (at 106.68 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 111.76 0)
@@ -1135,15 +1015,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR025") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -1152,7 +1032,7 @@
   (symbol (lib_id "Device:C") (at 96.52 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df3bd529-0d92-4001-809f-8ce0008e093c)
-    (property "Reference" "C1" (at 100.33 88.265 0)
+    (property "Reference" "C?" (at 100.33 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 100.33 90.805 0)
@@ -1169,15 +1049,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "C10") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -1186,7 +1066,7 @@
   (symbol (lib_id "Device:R") (at 147.32 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fa807c47-4f77-4977-b256-3ef74bae971f)
-    (property "Reference" "R2" (at 149.86 88.265 0)
+    (property "Reference" "R?" (at 149.86 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "383K" (at 149.86 90.805 0)
@@ -1203,15 +1083,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "R13") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -1220,7 +1100,7 @@
   (symbol (lib_id "power:+5V") (at 96.52 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fb667b92-7d20-4685-b8be-507faf1d6702)
-    (property "Reference" "#PWR06" (at 96.52 83.82 0)
+    (property "Reference" "#PWR?" (at 96.52 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 96.52 76.2 0)
@@ -1236,15 +1116,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR023") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -1253,7 +1133,7 @@
   (symbol (lib_id "power:GND") (at 96.52 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ff871387-91d7-4af6-9d8c-281616f1056d)
-    (property "Reference" "#PWR05" (at 96.52 101.6 0)
+    (property "Reference" "#PWR?" (at 96.52 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 96.52 100.33 0)
@@ -1269,15 +1149,15 @@
     (instances
       (project "mbus-reader-proto"
         (path "/36d146b0-f348-4341-a935-471af0e684a6"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
         (path "/36d146b0-f348-4341-a935-471af0e684a6/d9d13df7-ec5a-4d9a-8998-14ae0ed59560"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "emonHP"
-        (path "/afefbb79-c2cc-4097-b792-3e37a295b6e5/d4153821-464a-43cf-949b-6df0813cc359"
-          (reference "#PWR024") (unit 1)
+        (path "/3a5f1087-1abe-4575-9313-bd86a5e03366/1f5aaf38-830e-4ce3-b87a-a54930c92dff"
+          (reference "#PWR051") (unit 1)
         )
       )
     )
