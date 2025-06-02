@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -593,12 +593,12 @@
       "MBus"
     ],
     [
-      "de51fbea-fdbf-47e1-930a-00559b53efbd",
-      "RS485"
-    ],
-    [
       "4e2188bc-81fb-4771-8a06-3a142deeb7aa",
       "ACDetect"
+    ],
+    [
+      "de51fbea-fdbf-47e1-930a-00559b53efbd",
+      "RS485"
     ]
   ],
   "text_variables": {}
